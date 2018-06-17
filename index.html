@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/fonts.css">
+	<style>
+		.power{
+		    font-size: 28px;
+		    background: #090909;
+		    padding: 16px;
+		}
+	</style>
+	<title>Menu Principal</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 text-xs-center">
+				<h1>Vistas</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Actualmente estas trabajando en:</h3>
+			</div>
+			<div class="col-md-12" id="works">
+				<div class="power">
+					<a href="#">Nada Aún</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<p>Elije un Template para trabajar</p>
+				<ul id="listaDeTrabajos">
+					<li>
+						<a href="templates/menu/menu.html">
+							menu
+						</a>
+					</li>
+					<li>
+						<a href="templates/event/event.html">
+							event
+						</a>
+					</li>
+					<li>
+						<a href="templates/offer/offer.html">
+							offer
+						</a>
+					</li>
+					<li>
+						<a href="templates/work/work.html">
+							work
+						</a>
+					</li>
+					<li>
+						<a href="templates/explorer/explorer.html">
+							explorer
+						</a>
+					</li>
+					<li>
+						<a href="templates/profile/profile.html">
+							profile
+						</a>
+					</li>
+					<li>
+						<a href="templates/search/search.html">
+							search
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script defer>
+		(function(w){
+			function check(){
+				var works = JSON.parse(localStorage.getItem('works'));
+				if(works){
+					document.querySelector('#works a').setAttribute('href',works.url);
+					document.querySelector('#works a').textContent = works.name;
+				}else{
+					console.log('primera vez =D');
+				}
+			}
+			function setItem(el){
+				localStorage.setItem(
+					'works',
+					JSON.stringify(
+							{
+								name:el.text,
+								url:el.getAttribute('href')
+							}
+						));
+				document.querySelector('#works a').setAttribute('href',el.getAttribute('href'));
+				document.querySelector('#works a').textContent = el.text;
+			}
+			[].forEach.call(document.querySelectorAll('#listaDeTrabajos li'),function(li){
+				li.querySelector('a').onclick = function(){
+					setItem(this);
+				}
+			})
+			check();
+		})(window);
+	</script>
+</body>
+</html>

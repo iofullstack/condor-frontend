@@ -1,0 +1,11 @@
+Apuntes:
+  ☐ AMD: Asynchrounous Module Definition => lo usa require.js (usa mas peticiones)
+  ☐ CommonJS: Sistema de modulos de nodejs ( una sola petición )
+  ☐ Webpack: Usa lo mejor de AMD y CommonJS
+
+Para este curso estamos utilizando YARN:
+  ☐ Instalar yarn
+    https://yarnpkg.com/en/docs/install#windows-tab
+
+Instalar Webpack:
+  - yarn add webpack --dev

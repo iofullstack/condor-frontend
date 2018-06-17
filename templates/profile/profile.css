@@ -1,0 +1,496 @@
+body {
+  background: #e9eaef;
+}
+
+.reset-padding {
+  padding: 0;
+}
+
+.reset-margin {
+  margin: 0;
+}
+
+.padding-general {
+  padding: 15px 40px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.font-block {
+  display: block;
+}
+
+.font-general {
+  font-size: 14px;
+  color: #434344;
+}
+
+.font-midle {
+  font-size: 16px;
+}
+
+.font-big {
+  font-size: 20px !important;
+}
+
+.color-fucsia {
+  color: #dd4691;
+}
+
+.color-orange {
+  color: #f5ae33;
+}
+
+.color-turqueza {
+  color: #4ba5ab;
+}
+
+.color-ligth-gray {
+  color: #bbbcc1;
+}
+
+.bg-gray {
+  background: #e9eaef !important;
+}
+
+.bg-ligth-gray {
+  background: #f6f6f8 !important;
+}
+
+.container-profile {
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container-information {
+  background: white;
+  height: 600px;
+  display: inline-block;
+  width: 100%;
+}
+
+.container-menu {
+  display: none;
+}
+
+.container-menu1 {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.container-small {
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+.borde {
+  border-bottom: 1px solid #cccccc63;
+}
+
+.container-midle {
+  width: 100%;
+  height: 80px;
+}
+
+.container-normal {
+  text-align: justify;
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+.container-normal-r {
+  text-align: justify;
+  width: 100%;
+  height: auto;
+}
+
+.container-midle-2 {
+  width: 100%;
+  height: auto;
+  text-align: justify;
+  background: white;
+}
+
+.Portada {
+  width: 100%;
+  height: 210px;
+  background: #ccc;
+  background-image: url('../../assets/images/portada.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  color: white;
+}
+
+.portada-logo {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  background: #ccc;
+  border-radius: 50%;
+  background-image: url('../../assets/images/logotodopique.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portada-gradient {
+  height: 150px;
+  background-image: -webkit-linear-gradient(bottom, black, transparent);
+  background-image: -moz-linear-gradient(bottom, black, transparent);
+  background-image: -ms-linear-gradient(bottom, black, transparent);
+}
+
+.container-options {
+  width: 22%;
+  height: 100%;
+  display: inline-block;
+}
+
+.option {
+  background: url(../../assets/images/sprite-logoo-light.png);
+  width: 60px;
+  height: 60px;
+  background-size: auto 60px;
+  background-position: 0px;
+  margin: 0 auto;
+  margin-top: 3px;
+}
+
+.icons1 {
+  display: block;
+  width: 30px;
+  height: 50px;
+  float: left;
+  font-size: 35px;
+}
+
+.font-general1 {
+  font-size: 17px;
+  display: block;
+  color: #434344;
+}
+
+.container-midle a {
+  color: #434344;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.icon-social {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  display: inline-block;
+  text-align: center;
+  background: #424242;
+  border-radius: 50%;
+  color: white;
+  margin: 8px;
+}
+
+.facebook:hover {
+  background: white;
+  color: #3b5998;
+}
+
+.twitter:hover {
+  background: white;
+  color: #54acef;
+}
+
+.google-plus:hover {
+  background: white;
+  color: #db4030;
+}
+
+.youtube {
+  padding: 0px 12px;
+}
+
+.youtube:hover {
+  color: #ea3f33;
+  background: white;
+}
+
+.container-gps {
+  background: #02529c;
+  height: 220px;
+  width: 100%;
+}
+
+.container-picture {
+  height: 200px;
+  width: 100%;
+  background: white;
+}
+
+.container-flecha {
+  width: 20%;
+  height: 200px;
+}
+
+.container-picture-image {
+  height: 200px;
+  width: 60%;
+  float: left;
+  background: red;
+}
+
+.icon-flecha {
+  display: block;
+  margin-top: 70px;
+  font-size: 50px;
+  color: #434344;
+}
+
+.info {
+  margin-left: 10px;
+  float: left;
+}
+
+@media (max-width:300px) {
+  .icon-social {
+    width: 33px;
+    height: 33px;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+    background: #424242;
+    border-radius: 50%;
+    color: white;
+    margin: 8px;
+  }
+}
+
+@media (min-width:420px) {
+  .icon-social {
+    width: 55px;
+    height: 55px;
+    font-size: 39px;
+    padding: 2px;
+    margin: 14px;
+  }
+}
+
+@media (min-width:768px) {
+  .container-small {
+    width: 35%;
+    height: 70px;
+    float: right;
+    border-bottom: 0;
+    border-left: 1px solid #8a8a8c40;
+  }
+  .icon-social {
+    width: 47px;
+    height: 47px;
+    font-size: 33px;
+  }
+  .container-midle-2 {
+    height: 70px;
+    float: left;
+    width: 65%;
+    border-bottom: 0;
+  }
+  .container-midle {
+    width: 50%;
+    height: 80px;
+    float: left;
+    border-bottom: 0px;
+  }
+  .container-normal {
+    clear: both;
+  }
+  .container-gps {
+    height: 280px;
+  }
+  .container-normal-r {
+    height: 125px;
+  }
+  .option {
+    margin: 0;
+    margin-top: 14px;
+    float: left;
+  }
+  .option-name {
+    font-size: 20px;
+    display: block;
+    margin-top: 35px;
+  }
+  .container-midle a {
+    font-size: 13px;
+  }
+  .font-general1 {
+    font-size: 15px;
+  }
+}
+
+@media (min-width:960px) {
+  .opt {
+    background: #292929 !important;
+    height: 27px;
+    width: 97%;
+    margin: 0 auto;
+    margin-left: -7px;
+    margin-top: 0px;
+    padding: 4px;
+    padding-left: 80px;
+  }
+  .opt span {
+    color: white;
+  }
+  .opt .option1 {
+    margin-right: -15px;
+  }
+  .opt:before {
+    content: '';
+    width: 19.2px;
+    height: 19.5px;
+    background: #292929;
+    position: absolute;
+    left: -7px;
+    margin-top: 0px;
+    transform: rotate(45deg);
+  }
+  .option1 {
+    float: right;
+    background: url(../../assets/images/sprite-logoo.png);
+    width: 50px;
+    height: 50px;
+    background-size: auto 50px;
+    background-position: 0px;
+    margin-top: -15px;
+    margin-right: -5px;
+    border-radius: 50%;
+    margin-bottom: 6px;
+  }
+  .reset-margin1 {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    width: 960px;
+    float: none;
+  }
+  .font-general {
+    font-size: 14px;
+  }
+  .reset-padding {
+    padding: 0px 15px;
+  }
+  .reset-margin {
+    margin: 0 -15px;
+  }
+  .container-profile {
+    padding: 20px;
+    width: 960px;
+  }
+  .container-information {
+    width: 600px;
+    margin-top: 120px;
+  }
+  .container-menu {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    background: white;
+    margin-left: 20px;
+    border-radius: 7px;
+    color: #707175;
+    position: fixed;
+  }
+  .more-information {
+    width: 90%;
+    margin: 0 auto;
+    height: 26px;
+    border-bottom: 1px solid #8a8a8c40;
+    margin-bottom: 10px;
+  }
+  .container-menu-invitation {
+    height: 75px;
+    background: #292929;
+    border-radius: 7px 7px 0px 0px;
+    padding: 15px;
+  }
+  .container-menu-logo {
+    height: 40px;
+    margin-top: -10px;
+  }
+  .container-menu-invitation .container-midle {
+    /* background: #292929; */
+    height: 50px;
+    padding: 10px;
+  }
+  .container-menu-invitation .container-midle span {
+    color: #e9eaeb !important;
+  }
+  .container-menu-search {
+    padding: 10px;
+    height: 70px;
+  }
+  .container-menu-search span {
+    float: left;
+    margin: 15px;
+    color: #707175 !important;
+  }
+  .container-menu-search .container-small {
+    border-left: 0;
+    background: red;
+    height: 50px;
+  }
+  .container-menu .container-normal {
+    padding: 5px;
+  }
+  .container-opciones {
+    padding: 15px 5px;
+  }
+  .opciones {
+    height: 27px;
+    width: 95%;
+    /* background: rebeccapurple; */
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 5px;
+    padding-left: 65px;
+    color: white;
+  }
+  .opciones span {
+    color: #707175;
+  }
+  .container-menu1 {
+    display: none;
+  }
+  .padding-general {
+    padding: 15px 18px;
+  }
+  .Portada {
+    padding-top: 0px;
+  }
+  .portada-logo {
+    margin: 0;
+    position: absolute;
+    left: 60px;
+    border-radius: 0;
+    width: 150px;
+    top: 100px;
+    height: 150px;
+    box-shadow: 1px 1px 5px #000;
+  }
+  .portada-gradient {
+    height: 150px;
+    padding-top: 20px;
+    background-image: -webkit-linear-gradient(top, black, transparent);
+    background-image: -moz-linear-gradient(top, black, transparent);
+    background-image: -ms-linear-gradient(top, black, transparent);
+  }
+}
