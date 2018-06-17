@@ -28,7 +28,8 @@
   height: 100%;
   margin-left: -250px;
   overflow-y: auto;
-  background: #000;
+  background: #f3f3f3;
+  box-shadow: -7px 9px 25px #2d2d2d;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -42,7 +43,7 @@
 #page-content-wrapper {
   width: 100%;
   position: absolute;
-  padding: 15px;
+  /*padding: 15px;*/
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -70,32 +71,50 @@
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
-  color: #999999;
+  color: #343a40;
 }
 
 .sidebar-nav li a:hover {
   text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  color: #673ab7;
+  background: rgba(63, 81, 181, 0.16);
 }
 
 .sidebar-nav li a:active, .sidebar-nav li a:focus {
   text-decoration: none;
 }
-
+.sidebar-brand{
+  text-align: center
+}
+.sidebar-brand img{
+  display: block;
+  width: 208px;
+  height: 108px;
+  margin: 0 auto;
+}
 .sidebar-nav>.sidebar-brand {
-  height: 65px;
   font-size: 18px;
   line-height: 60px;
-}
+  padding: 30px 0px 6px 0px;
+  /*background: #1c7aa4;*/
+  background: #00c6ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(45deg, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
 .sidebar-nav>.sidebar-brand a {
-  color: #999999;
+  color: #cee5ff;
+  font-weight: bold;
 }
-
 .sidebar-nav>.sidebar-brand a:hover {
-  color: #fff;
+  color: #fdfdfd;
   background: none;
+}
+/* navbar styles */
+.navbar-brand img{
+  width: 90px;
+  height: 28px;
+  margin-left: 30px;
 }
 
 @media(min-width:768px) {
@@ -112,11 +131,26 @@
     width: 250px;
   }
   #page-content-wrapper {
-    padding: 20px;
+    /*padding: 20px;*/
     position: relative;
   }
   #wrapper.toggled #page-content-wrapper {
     position: relative;
     margin-right: 0;
   }
+}
+/* styles for card home */
+.card-link{
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 7;
+}
+.icon-vender {
+  text-align: center;
+}
+.icon-vender i{
+  font-size: 80px;
 }
