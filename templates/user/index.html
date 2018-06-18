@@ -4,24 +4,194 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>User</title>
+  <title>Users</title>
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./user.css">
+  <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
 </head>
 <body>
-  <form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-    <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  <h1>template user</h1>
+  <section class="registration-forms">
+    <form>
+      <article>
+        <h3>Datos Personales</h3>
+        <div class="form-group">
+          <label for="ci">CI: </label>
+          <input type="number" class="form-control" id="ci" placeholder="Introduzca CI">
+        </div>
+        <div class="form-group">
+          <label for="ex">Expendido</label>
+          <select class="form-control" id="ex">
+            <option value="LP">La Paz</option>
+            <option value="CH">Chuquisaca</option>
+            <option value="CB">Cochabamba</option>
+            <option value="BE">Beni</option>
+            <option value="PA">Pando</option>
+            <option value="PT">Potosí</option>
+            <option value="TJ">Tarija</option>
+            <option value="OR">Oruro</option>
+            <option value="SC">Santa Cruz</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="name">Nombre: </label>
+          <input type="text" class="form-control" id="name" placeholder="Introduzca Nombre">
+        </div>
+        <div class="form-group">
+          <label for="lastname">Apellido: </label>
+          <input type="text" class="form-control" id="lastname" placeholder="Introduzca Apellido">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="date">Fecha de nacimiento: </label>
+          <input type="date" class="form-control" id="date">
+        </div>
+        <div><label>Sexo </label> </div>        
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="radio_sexo" id="male" value="masculino">
+          <label class="form-check-label" for="male">Masculino </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="radio_sexo" id="female" value="femenino">
+          <label class="form-check-label" for="female">Femenino </label>
+        </div>
+        <div><input type="button" class="btn btn-secondary" value="Siguiente"> </div>
+      </article>
+      <acticle>
+        <h3>Datos Contraración</h3>
+        <div class="form-group">
+          <label for="address">Dirección </label>
+          <input type="text" class="form-control" id="address" placeholder="Introduzca tu dirección">
+        </div>
+        <div class="form-group">
+          <label for="cellphone">Celular: </label>
+          <input type="number" class="form-control" id="cellphone" placeholder="Introduzca número de celular">
+        </div>
+        <div class="form-group">
+          <label for="salary">Salario: </label>
+          <input type="text" class="form-control" id="salary" placeholder="Introduzca Apellido">
+        </div>
+        <div class="form-group">
+          <label for="turn">Turno</label>
+          <select class="form-control" id="turn">
+            <option value="turn1">Mañana </option>
+            <option value="turn2">Tarde </option>
+            <option value="turn3">Noche </option>
+          </select>
+        </div>
+        
+        <input type="button" class="btn btn-secondary" value="Atras">
+        <input type="button" class="btn btn-secondary" value="Siguiente">
+      </acticle>
+      <article>
+        <h3>Privilegios</h3>
+        <div class="admin">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="privilegeAdmin" value="option1">
+            <label class="form-check-label" for="privilegeAdmin"><h4>Administrador</h4> </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="privilege1" value="option1">
+            <label class="form-check-label" for="privilege1">Registrar Personal </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="privilege2" value="option1">
+            <label class="form-check-label" for="privilege2">Control de Salas y Mesas </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="privilege3" value="option1">
+            <label class="form-check-label" for="privilege3">Kardex de productos </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="privilege4" value="option1">
+            <label class="form-check-label" for="privilege4">Informe y récord de ventas </label>
+          </div>
+        </div>
+        <div class="cashier">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="privilegeAdmin" value="option1">
+            <label class="form-check-label" for="privilegeAdmin"><h4>Cajero</h4> </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="privilege5" value="option1">
+            <label class="form-check-label" for="privilege5">Abrir y cerrar caja </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="privilege6" value="option1">
+            <label class="form-check-label" for="privilege6">Registrar Cliente </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="privilege7" value="option1">
+            <label class="form-check-label" for="privilege7">Emitir facturas o recibos </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="privilege8" value="option1">
+            <label class="form-check-label" for="privilege8">Listar los pedidos (Completados o en Proceso) </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="privilege9" value="option1">
+            <label class="form-check-label" for="privilege9">Cambio de mesa </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="privilege10" value="option1">
+            <label class="form-check-label" for="privilege10">Unir Mesas </label>
+          </div>
+        </div>
+        <div class="waiter">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="privilegeWaiter" value="option1">
+            <label class="form-check-label" for="privilegeWaiter"><h4>Mesero </h4> </label>
+          </div>
+          <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="privilege11" value="option1">
+              <label class="form-check-label" for="privilege11">Registrar pedidos </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="privilege12" value="option1">
+              <label class="form-check-label" for="privilege12">Listar los pedidos (Completados o en Proceso)</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="privilege13" value="option1">
+              <label class="form-check-label" for="privilege13">Cambio de mesa </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="privilege14" value="option1">
+              <label class="form-check-label" for="privilege14">Unir Mesas </label>
+            </div>
+        </div>
+        <div class="cook">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="privilegeCook" value="option1">
+            <label class="form-check-label" for="privilegeCook"><h4>Cocinero </h4> </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="privilege15" value="option1">
+            <label class="form-check-label" for="privilege15">Lista de pedidos </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="privilege16" value="option1">
+            <label class="form-check-label" for="privilege16">Completar un pedido </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="privilege17" value="option1">
+            <label class="form-check-label" for="privilege17">Cancelar un pedido (Observación) </label>
+          </div>
+        </div>
+        
+
+        <input type="button" class="btn btn-secondary" value="Atras">
+        <input type="submit" class="btn btn-primary">
+      </article>
+    </form>
+  </section>
+
+
+  <script src="../../assets/js/jquery.min.js"></script>
+  <script src="../../assets/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/popper.min.js"></script>
+  <!-- <script src="./dashboard.js"></script> -->
 </body>
 </html>

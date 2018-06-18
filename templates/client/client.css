@@ -1,0 +1,23 @@
+.registration-forms {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.menu-item {
+  display: grid;
+  grid-template: 1fr 1fr/250px 1fr;
+  grid-template-areas: "picture content" "picture content";
+}
+.menu-item figure {
+  grid-area: picture;
+  width: 250px;
+}
+.menu-item figure img {
+  width: 100%;
+}
+.menu-item .title {
+  gird-area: content;
+}
+.menu-item .description {
+  grid-area: content;
+}
