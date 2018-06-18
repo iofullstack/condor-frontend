@@ -7,38 +7,39 @@
   <title>Dashboard</title>
   <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="./dashboard.css">
-  <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../assets/css/font-material.css">
 </head>
 <body>
-    <div id="wrapper">
+    <div id="wrapper" class="toggled">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
+                  <img src="../../assets/images/condor-isotipo.svg" alt="">
                     <a href="#">
-                        Start Bootstrap
+                        Condor Cafe Admin
                     </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                  <a href="#">Inicio</a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
+                    <a href="#">Venta</a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
+                    <a href="#">Caja</a>
                 </li>
                 <li>
-                    <a href="#">Events</a>
+                    <a href="#">Personal</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#">Salones y Mesas</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#">Productos</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#">Reportes</a>
                 </li>
             </ul>
         </div>
@@ -47,11 +48,10 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <!-- estado de la navegación -->
-            <nav class="navbar navbar-dark bg-primary">
+            <nav class="navbar navbar-dark bg-dark">
               <a class="navbar-brand" href="#menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i>
-                <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                Bootstrap
+                  <i class="material-icons">menu</i>
+                <img src="../../assets/images/condor-logotipo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
               </a>
             </nav>     
             <nav aria-label="breadcrumb">
@@ -63,26 +63,113 @@
             </nav>
 
             <div class="container-fluid">
-              <div class="row">
-                  <div class="col-sm-6">
-                    <div class="card">
+              <div class="row justify-content-center">
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                      <a href="" class="card-link"></a>
+                      <div class="card-header">
+                          <h5 class="card-title">Ventas</h5>
+                      </div>
                       <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="icon-vender">
+                          <i class="material-icons">fastfood</i>
+                        </div>
+                        <p class="card-text">
+                          Realizar una venta o pedido, designar una mesa.
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6">
-                    <div class="card">
+
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                      <a href="" class="card-link"></a>
+                      <div class="card-header">
+                          <h5 class="card-title">Caja</h5>
+                      </div>
                       <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="icon-vender">
+                          <i class="material-icons">local_atm</i>
+                        </div>
+                        <p class="card-text">
+                          Revisar el Movimiento Economico, montos iniciales.
+                        </p>
                       </div>
                     </div>
                   </div>
-                </div>             
+
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                      <a href="" class="card-link"></a>
+                      <div class="card-header">
+                          <h5 class="card-title">Personal</h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="icon-vender">
+                          <i class="material-icons">supervised_user_circle</i>
+                        </div>
+                        <p class="card-text">
+                          Administrar personal y sus permisos.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="row justify-content-center">
+
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                      <a href="" class="card-link"></a>
+                      <div class="card-header">
+                          <h5 class="card-title">Salones y Mesas</h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="icon-vender">
+                          <i class="material-icons">event_seat</i>
+                        </div>
+                        <p class="card-text">
+                          Administrar personal y sus permisos.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                      <a href="" class="card-link"></a>
+                      <div class="card-header">
+                          <h5 class="card-title">Productos</h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="icon-vender">
+                          <i class="material-icons">kitchen</i>
+                        </div>
+                        <p class="card-text">
+                          Administrar sus productos que ofrece.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                      <a href="" class="card-link"></a>
+                      <div class="card-header">
+                          <h5 class="card-title">Reportes</h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="icon-vender">
+                          <i class="material-icons">show_chart</i>
+                        </div>
+                        <p class="card-text">
+                          Administrar sus productos que ofrece.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                    
+              </div>      
             </div>
         </div>
         <!-- /#page-content-wrapper -->
