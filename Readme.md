@@ -8,26 +8,26 @@
 ```
 > For best performance install [Yarn](https://yarnpkg.com)
 
-# Run with *yarn*
+## Run with *yarn*
 
-## Install dependencies with yarn
+### Install dependencies with yarn
 ```sh
   yarn install
 ```
 
-## Run the local server yarn
+### Run the local server yarn
 ```sh
   yarn start
 ```
 
-# Run with *npm*
+## Run with *npm*
 
-## Install dependencies with npm
+### Install dependencies with npm
 ```sh
   npm install
 ```
 
-## Run the local server npm
+### Run the local server npm
 ```sh
   npm start
 ```
