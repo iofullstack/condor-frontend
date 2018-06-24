@@ -10,27 +10,31 @@
 
 ## Run with *yarn*
 
-### Install dependencies with yarn
+- Install dependencies with yarn
 ```sh
   yarn install
 ```
 
-### Run the local server yarn
+- Run the local server yarn
 ```sh
   yarn start
 ```
 
 ## Run with *npm*
 
-### Install dependencies with npm
+- Install dependencies with npm
 ```sh
   npm install
 ```
 
-### Run the local server npm
+- Run the local server npm
 ```sh
   npm start
 ```
+## File Structure
+
+This project use the file structure *Grouping by features or routes*
+for more info [React File Structure](https://reactjs.org/docs/faq-structure.html)
 
 ## Great!!
 > iofullstack &copy;2018
