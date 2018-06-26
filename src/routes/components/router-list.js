@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
   Route,
   Switch
 } from 'react-router-dom';
+/* code splitting */
 import Loadable from 'react-loadable';
 
 /*loading*/
@@ -12,9 +12,6 @@ import Loading from '../../common/loading/loading';
 import NoMatch from '../../common/notmatch/notmatch';
 /*Home Page*/
 import HomePage from '../../pages/home-page';
-/*Footer Page*/
-import Footer from '../../common/footer/footer';
-
 /*components format Code - Splitting
 const EventPage = Loadable({
   loader: ()=> import('../../pages/event-page/containers/event-page'),
@@ -22,18 +19,14 @@ const EventPage = Loadable({
 })
 */
 
-const RouterList = (props)=>(
-  <Router>
-    <div className="RouterList-container" style={ {height:'100vh'} }>
-      { props.children }
-      <Switch>
-        <Route exact path="/" component={HomePage}/>
-        <Route component={NoMatch} />
-      </Switch>
-      <Footer/>
-    </div>
-  </Router>
-)
+const RouterList = (props)=>{
+  return(
+    <Switch>
+      <Route exact path="/" component={HomePage}/>
+      <Route component={NoMatch} />
+    </Switch>        
+  )
+}
 
 
 export default RouterList;
