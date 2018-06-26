@@ -36,5 +36,10 @@
 This project use the file structure *Grouping by features or routes*
 for more info [React File Structure](https://reactjs.org/docs/faq-structure.html)
 
+## Styles used
+
+This project use Material UI
+[Material UI](https://material-ui.com/)
+
 ## Great!!
 > iofullstack &copy;2018
