@@ -4,8 +4,7 @@ import RouterApp from './routes/containers/router-app';
 class App extends Component {
   render() {
     return (
-      <RouterApp>
-      </RouterApp>
+      <RouterApp/>
     );
   }
 }
