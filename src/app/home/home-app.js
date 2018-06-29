@@ -7,9 +7,9 @@ class HomeApp extends Component{
   render(){
     return(
       <div>
-        Welcome to Home
+        Home: Test of Material UI for React
         <Button>
-          Default
+          Entry to menu
         </Button>
         <Button variant="contained" color="primary">
           <span>
@@ -22,6 +22,7 @@ class HomeApp extends Component{
           <Icon>edit_icon</Icon>
         </Button>
 
+        <Icon>menu</Icon>
       </div>
     )
   }
