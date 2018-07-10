@@ -1,5 +1,13 @@
 const styles = {
+  container:{
+    marginRight: 'auto',
+    marginLeft: 'auto',
+    paddingLeft: 15,
+    paddingRight: 15,
+  },
   card: {
+    position:'relative',
+    margin:'0 auto',
     width: 275,
     backgroundColor:"#303F9F",
     textAlign:"center",
