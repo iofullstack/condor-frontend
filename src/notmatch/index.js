@@ -1,10 +1,9 @@
 import React from 'react';
-import './notmatch.css';
 
-const NotMatch = (props)=>(
+const NotMatch = ()=>(
   <div>
     <h1>404</h1>
-    contenido no encontrado...
+    el contenido no existe
   </div>
 );
 

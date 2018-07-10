@@ -5,24 +5,24 @@ import {
 } from 'react-router-dom';
 /* code splitting */
 import Loadable from 'react-loadable';
-
 /*loading*/
-import Loading from '../../common/loading/loading';
+import Loading from '../../loading';
 /*404 error*/
-import NoMatch from '../../common/notmatch/notmatch';
-/*Home Page*/
-import HomePage from '../../pages/home-page';
-/*components format Code - Splitting
-const EventPage = Loadable({
-  loader: ()=> import('../../pages/event-page/containers/event-page'),
-  loading: Loading
-})
-*/
+import NoMatch from '../../notmatch';
 
+/*Home Page*/
+const HomePage = ()=>(
+  <div style={{height:'150vh'}}>Home</div>
+);
+/* CodeSpliting
+const Statistics = Loadable({
+  loader: ()=> import('../../statistics/statistics'),
+  loading: Loading
+});*/
 const RouterList = (props)=>{
   return(
     <Switch>
-      <Route exact path="/" component={HomePage}/>
+      <Route exact path="/" component={ HomePage }/>
       <Route component={NoMatch} />
     </Switch>        
   )
