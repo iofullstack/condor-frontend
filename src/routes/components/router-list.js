@@ -5,6 +5,8 @@ import {
 } from 'react-router-dom';
 /* code splitting */
 import Loadable from 'react-loadable';
+/* Rutas Privadas */
+import PrivateRoute from './private-route'
 /*loading*/
 import Loading from '../../loading';
 /*404 error*/
@@ -14,14 +16,15 @@ import NoMatch from '../../notmatch';
 const HomePage = ()=>(
   <div style={{height:'150vh'}}>Home</div>
 );
-/* CodeSpliting
-const Statistics = Loadable({
-  loader: ()=> import('../../statistics/statistics'),
+/* CodeSpliting */
+const ProfileSecurity = Loadable({
+  loader: ()=> import('../../profile-security'),
   loading: Loading
-});*/
+});
 const RouterList = (props)=>{
   return(
     <Switch>
+      <PrivateRoute path="/profile-security" component={ ProfileSecurity } isAuth={ props.auth } />
       <Route exact path="/" component={ HomePage }/>
       <Route component={NoMatch} />
     </Switch>        

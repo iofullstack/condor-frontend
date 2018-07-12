@@ -6,7 +6,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
+import SecurityIcon from '@material-ui/icons/Security';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import StarIcon from '@material-ui/icons/Star';
 import SendIcon from '@material-ui/icons/Send';
@@ -21,16 +21,16 @@ const MenuList = (props)=>{
           className={ classes.image }
           alt=""/>
       </ListItem>
-      <NavLink to="/statistics">
+      <NavLink to="/profile-security">
         <ListItem button>
           <ListItemIcon>
-            <StarIcon className={ classes.item } />
+            <SecurityIcon className={ classes.item } />
           </ListItemIcon>
           <ListItemText
             disableTypography
             primary={
               <Typography className={ classes.item }>
-                Statistics
+                Perfiles de Seguridad
               </Typography>
             }
           />

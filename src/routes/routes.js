@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import RouterList from './components/router-list';
-import Main from '../main/main';
-import Login from '../login/login';
+import Main from '../main';
+import Login from '../login';
 
 class RouterApp extends Component {
   state = {
-    auth: false
+    auth: true
   }
   handleLogin = (e)=>{
     this.setState({
@@ -19,7 +19,7 @@ class RouterApp extends Component {
         {
           this.state.auth ?
           <Main>
-            <RouterList/>
+            <RouterList auth={ this.state.auth } />
           </Main>
           : <Login handleLogin={ this.handleLogin }/>
         }
