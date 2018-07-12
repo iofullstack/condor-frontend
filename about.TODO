@@ -1,2 +1,64 @@
 BASE_URL API:
 http://iofullstack.com:3500/
+
+
+Agregar Perfil de Seguridad
+
+Nombre:
+  Admin-3
+Permisos:
+  INSERT_USER : Insertar usuario
+  UPDATE_USER : Actualizar usuario
+  --- DELETE_USER : ELiminar Usuario
+  INSERT_CAJERO: Insertar Cajero
+  + add
+Descripcion: (Autogenerar)
+  Este usuario puede:
+    -Insertar Usuario
+    -Actualizar Usuario
+    -Insertar Cajero
+
+*************
+Admin-3               Permisos: 
+                      Este usuario puede:
+                        -Insertar Usuario
+                        -Actualizar Usuario
+                        -Insertar Cajero
+
+
+Usuario
+---------------------
+TODO              [ x ] - { UPDATE_USER,UPDATE_USER,UPDATE_USER }
+SOLO EDITAR       [ x ] - { UPDATE_USER }
+SOLO CREAR        [ x ] - { UPDATE_USER }
+SOLO LECTURA      [ x ] - { UPDATE_USER }
+---------------------
+
+Modulos con sus permisos:
+
+  usuario:[
+    {
+      id:1,
+      name:'Inserta Usuario'
+      action:'INSERT_USER'
+    },
+    {
+      id:2,
+      action:'UPDATE_USER',
+      description:'Editas o Actualizas info un usuario'
+    }
+  ],
+  ventas:[
+    {
+      id:1,
+      action:'INSERT_VENTA',
+      description:'Insertas un usuario'
+    },
+    {
+      id:2,
+      action:'UPDATE_VENTAS',
+      description:'Editas o Actualizas info un usuario'
+    }
+  ]
+
+      
