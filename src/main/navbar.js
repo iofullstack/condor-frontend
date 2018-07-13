@@ -81,7 +81,7 @@ class Navbar extends React.Component {
             })}
           >
             <div className={classes.drawerHeader} />
-            <div>
+            <div className={classes.mainContent}>
               { this.props.children }
             </div>
           </main>

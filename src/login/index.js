@@ -13,7 +13,7 @@ class Login extends Component{
       <section 
         className={ classes.container }
         style={{
-          backgroundImage: `url(/assets/images/bg-login-min.jpg)`,
+          backgroundImage: `url(/assets/images/bg-loginb-min.jpg)`,
           backgroundPosition: 'center',
           backgroundSize: 'cover'
         }}  

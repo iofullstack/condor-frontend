@@ -1,0 +1,52 @@
+[
+  {
+    "usuario":[
+      {
+        "id":1,
+        "name":"Crear Usuario",
+        "action":"INSERT_USER"
+      },
+      {
+        "id":1,
+        "name":"Editar Usuario",
+        "action":"INSERT_USER"
+      },
+      {
+        "id":1,
+        "name":"Ver Usuario",
+        "action":"INSERT_USER"
+      },
+      {
+        "id":1,
+        "name":"Eliminar Usuario",
+        "action":"INSERT_USER"
+      }
+    ]
+  },
+
+  {
+    "asistencia":[
+      {
+        "id":1,
+        "name":"Crear Asistencia",
+        "action":"INSERT_USER"
+      },
+      {
+        "id":1,
+        "name":"Editar Asistencia",
+        "action":"INSERT_USER"
+      },
+      {
+        "id":1,
+        "name":"Ver Asistencia",
+        "action":"INSERT_USER"
+      },
+      {
+        "id":1,
+        "name":"Eliminar Asistencia",
+        "action":"INSERT_USER"
+      }
+    ]
+  }
+
+]

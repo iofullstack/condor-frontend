@@ -40,7 +40,7 @@ const SignIn = (props)=>{
                     root: classes.cssLabel,
                     focused: classes.cssFocused,
                   }}
-                  htmlFor="custom-css-input"
+                  htmlFor="email"
                 >
                   Correo Electronico o Usuario
                 </InputLabel>
@@ -54,6 +54,7 @@ const SignIn = (props)=>{
                       <PersonOutlineIcon className={ classes.icon } />
                     </InputAdornment>
                   }
+                  id="email"
                 />
             </FormControl>
           </Grid>
@@ -64,7 +65,7 @@ const SignIn = (props)=>{
                   root: classes.cssLabel,
                   focused: classes.cssFocused,
                 }}
-                htmlFor="custom-css-input"
+                htmlFor="password"
               >
                 Contraseña
               </InputLabel>
@@ -79,6 +80,7 @@ const SignIn = (props)=>{
                     <VpnKeyIcon className={ classes.icon }/>
                   </InputAdornment>
                 }
+                id="password"
               />
             </FormControl>
           </Grid>

@@ -34,8 +34,8 @@ export const navbarStyle = theme => ({
     width: '100%',
   },
   appBar: {
-    color:'#000',
-    backgroundColor: '#FFC107',
+    color:'#fff',
+    backgroundColor: '#2196F3',
     position: 'fixed',
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
@@ -76,7 +76,6 @@ export const navbarStyle = theme => ({
   },
   content: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
     padding: 0,
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
@@ -85,6 +84,9 @@ export const navbarStyle = theme => ({
   },
   'content-left': {
     marginLeft: 0,
+  },
+  mainContent:{
+    minHeight:'100vh',
   },
   contentShift: {
     transition: theme.transitions.create('margin', {
