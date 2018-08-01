@@ -21,10 +21,20 @@ const ProfileSecurity = Loadable({
   loader: ()=> import('../../profile-security'),
   loading: Loading
 });
+const Modules = Loadable({
+  loader: ()=> import('../../modules'),
+  loading: Loading
+});
+const Permits = Loadable({
+  loader: ()=> import('../../permits'),
+  loading: Loading
+});
 const RouterList = (props)=>{
   return(
     <Switch>
       <PrivateRoute path="/profile-security" component={ ProfileSecurity } isAuth={ props.auth } />
+      <PrivateRoute path="/modules/:idModule" component={ Permits } isAuth={ props.auth } />
+      <PrivateRoute path="/modules" component={ Modules } isAuth={ props.auth } />
       <Route exact path="/" component={ HomePage }/>
       <Route component={NoMatch} />
     </Switch>        

@@ -56,6 +56,7 @@ const FormProfile = (props)=>{
                       </InputAdornment>
                     }
                     id="name"
+                    autoComplete="off"
                   />
               </FormControl>
             </Grid>

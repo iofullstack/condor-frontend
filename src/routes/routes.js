@@ -6,7 +6,7 @@ import Login from '../login';
 
 class RouterApp extends Component {
   state = {
-    auth: false
+    auth: true
   }
   handleLogin = (e)=>{
     this.setState({

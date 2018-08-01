@@ -1,0 +1,29 @@
+.BannerForm{
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+}
+.BannerForm h1{
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.BannerForm:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  left: 0;
+  bottom: 0;
+  background: #fff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #fff, transparent);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #fff, transparent); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

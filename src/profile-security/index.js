@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ListProfile from './list-profile';
 import FormProfile from './form-profile';
-import condorModules from './modules.json';
+import condorModules from '../http/modules.json';
 
 class ProfileSecurity extends Component{
   state = {

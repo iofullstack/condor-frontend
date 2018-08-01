@@ -10,6 +10,7 @@ import SecurityIcon from '@material-ui/icons/Security';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import StarIcon from '@material-ui/icons/Star';
 import SendIcon from '@material-ui/icons/Send';
+import QueueIcon from '@material-ui/icons/Queue';
 
 const MenuList = (props)=>{
   const { classes } = props;
@@ -21,6 +22,21 @@ const MenuList = (props)=>{
           className={ classes.image }
           alt=""/>
       </ListItem>
+      <NavLink to="/modules">
+        <ListItem button>
+          <ListItemIcon>
+            <QueueIcon className={ classes.item } />
+          </ListItemIcon>
+          <ListItemText
+            disableTypography
+            primary={
+              <Typography className={ classes.item }>
+                Modulos del Sistema
+              </Typography>
+            }
+          />
+        </ListItem>
+      </NavLink>
       <NavLink to="/profile-security">
         <ListItem button>
           <ListItemIcon>
