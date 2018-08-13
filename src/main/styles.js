@@ -77,6 +77,7 @@ export const navbarStyle = theme => ({
   content: {
     flexGrow: 1,
     padding: 0,
+    width: '100%',
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,

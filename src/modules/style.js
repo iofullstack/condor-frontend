@@ -1,4 +1,24 @@
+export const listStyle = (theme) => ({
+  root: {
+    width: '100%',
+    marginTop: theme.spacing.unit * 3,
+    overflowX: 'auto',
+  },
+  table: {
+    minWidth: 700,
+  },
+  fabButton:{
+    marginLeft:15,
+    marginRight:15,
+  },
+})
 export const formStyle = {
+  content:{
+    width:'100%',
+  },
+  contentCenter:{
+    margin: '0 auto',
+  },
   form:{
     padding: 0,
     marginTop: 30,
@@ -9,17 +29,17 @@ export const formStyle = {
     borderRadius: 5,
     overflow: 'hidden',
   },
-  formContent:{
-    padding: '5px 40px 40px 40px',
-  },
-  title:{
-    margin:'25px auto',
-  },
   formControl:{
     display: 'block',
     position: 'relative',
     margin: '20px auto',
     width: '100%',
+  },
+  formContent:{
+    padding: '5px 40px 40px 40px',
+  },
+  title:{
+    margin:'25px auto',
   },
   input:{
     width:'100%',
@@ -31,5 +51,14 @@ export const formStyle = {
   },
   btnForm: {
     textAlign: 'right',
+  },
+  btnAdd:{
+    outline: 'none!important',
+    '&:hover':{
+      color: '#FFF',
+    },
+    '&:active':{
+      color: '#FFF',
+    },
   },
 }

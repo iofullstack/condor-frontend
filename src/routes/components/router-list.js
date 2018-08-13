@@ -21,20 +21,33 @@ const ProfileSecurity = Loadable({
   loader: ()=> import('../../profile-security'),
   loading: Loading
 });
-const Modules = Loadable({
-  loader: ()=> import('../../modules'),
+/* Modules */
+const AddModule = Loadable({
+  loader: ()=> import('../../modules/form-module'),
   loading: Loading
 });
-const Permits = Loadable({
-  loader: ()=> import('../../permits'),
+const ListModules = Loadable({
+  loader: ()=> import('../../modules/list-modules'),
   loading: Loading
 });
+/* Permits */
+const AddPermit = Loadable({
+  loader: ()=> import('../../permits/form-permit'),
+  loading: Loading
+});
+const ListPermits = Loadable({
+  loader: ()=> import('../../permits/list-permit'),
+  loading: Loading
+})
 const RouterList = (props)=>{
   return(
     <Switch>
       <PrivateRoute path="/profile-security" component={ ProfileSecurity } isAuth={ props.auth } />
-      <PrivateRoute path="/modules/:idModule" component={ Permits } isAuth={ props.auth } />
-      <PrivateRoute path="/modules" component={ Modules } isAuth={ props.auth } />
+      {/* Modules */}
+      <PrivateRoute path="/modules/add" component={ AddModule } isAuth={ props.auth } />
+      <PrivateRoute path="/modules/:idModule/add" component={ AddPermit } isAuth={ props.auth } />
+      <PrivateRoute path="/modules/:idModule" component={ ListPermits } isAuth={ props.auth } />
+      <PrivateRoute path="/modules" component={ ListModules } isAuth={ props.auth } />
       <Route exact path="/" component={ HomePage }/>
       <Route component={NoMatch} />
     </Switch>        

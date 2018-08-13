@@ -28,8 +28,5 @@ export const formStyle = {
     color: '#5c5c5c',
   },
   cssFocused: {
-  },
-  btnForm: {
-    textAlign: 'right',
-  },
+  }
 }

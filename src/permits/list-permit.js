@@ -23,20 +23,13 @@ const ListPermit = (props)=>{
       justify='center'
       >
         <Grid item xs={12} sm={8} md={10} lg={8} xl={8}>
-          Lista de Permisos
-
+          
         </Grid>
-
-          <Grid 
-            container
-            justify="flex-end"
-          >
-            <Grid item xs={12} className = { classes.btnForm }>
-              <Button variant="contained" color="primary" className={classes.button}>
-                Agregar
-              </Button>
-            </Grid>  
-          </Grid>
+        <Grid item xs={12} className = { classes.btnForm }>
+          <Button variant="contained" color="primary">
+            Agregar
+          </Button>
+        </Grid>
     </Grid>
   );
 }
