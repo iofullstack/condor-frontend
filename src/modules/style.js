@@ -8,7 +8,6 @@ export const listStyle = (theme) => ({
     minWidth: 700,
   },
   fabButton:{
-    marginLeft:15,
     marginRight:15,
   },
 })
